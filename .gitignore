@@ -91,3 +91,6 @@ typings/
 .idea/
 
 .DS_Store
+
+# Prettier Ignore
+.prettierignore
