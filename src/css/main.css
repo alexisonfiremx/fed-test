@@ -60,5 +60,31 @@
 
 /* Begin styling the report items here! */
 .reports {
+  /* For Internet Explorer 11 */
+  display: -ms-flexbox;
+  -ms-flex-pack: justify;
+  -ms-box-pack: space-evenly;
+  -ms-flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* For rest of browsers */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 30px;
+  
+}
 
+.reports_item {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .reports {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 584px) {
+  .reports {
+    grid-template-columns: 1fr;
+  }
 }
